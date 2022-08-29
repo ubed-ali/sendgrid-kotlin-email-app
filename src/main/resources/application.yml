@@ -12,6 +12,6 @@ netty:
 micronaut:
   email:
     from:
-      name: 'Email-App'
-      email: 'syedubed09@gmail.com'
+      name: 'Email-App' //senders' name
+      email: 'syedubed09@gmail.com' //senders' email
 #end::mail[]
