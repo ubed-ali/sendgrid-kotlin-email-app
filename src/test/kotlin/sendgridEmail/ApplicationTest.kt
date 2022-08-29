@@ -7,7 +7,7 @@ import io.kotest.core.spec.style.StringSpec
 @MicronautTest
 class ApplicationTest(private val application: EmbeddedApplication<*>): StringSpec({
 
-  "test the server is running" {
+  "Testing the server is running" {
     assert(application.isRunning)
   }
 })
