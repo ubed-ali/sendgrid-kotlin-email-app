@@ -35,4 +35,3 @@ If you want to send every email with the same address, you can set it via config
 
   Run the application using following command
   `./gradlew run`
-   
