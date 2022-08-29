@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: email-app
+  server:
+    port: 8084
+netty:
+  default:
+    allocator:
+      max-order: 3
+#tag::mail[]
+---
+micronaut:
+  email:
+    from:
+      name: 'Email-App'
+      email: 'syedubed09@gmail.com'
+#end::mail[]
