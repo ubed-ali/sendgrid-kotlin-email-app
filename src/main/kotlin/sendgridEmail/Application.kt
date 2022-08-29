@@ -3,7 +3,7 @@ package sendgridEmail
 import io.micronaut.runtime.Micronaut.build
 import java.lang.Thread.sleep
 
-fun main(args: Array<String>)  {
+fun main(args: Array<String>) {
 			 println("Entering into '${Thread.currentThread().name}' thread.")
 				build()
 					.args(*args)
