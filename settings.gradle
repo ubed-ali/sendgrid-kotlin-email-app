@@ -1,0 +1,6 @@
+
+rootProject.name="email-app"
+include 'core'
+include 'core:src'
+findProject(':core:src')?.name = 'src'
+
