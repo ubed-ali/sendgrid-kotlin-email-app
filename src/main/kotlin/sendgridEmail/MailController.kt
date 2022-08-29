@@ -30,7 +30,7 @@ class MailController(private val emailSender: AsyncEmailSender<Request, Response
           .to(to)
           .subject("Sending e-mail from 1st POST method using '${Thread.currentThread().name}' thread")
           .body("Hello <em>${to},</em><br>" +
-            "Thank you for subscribing to our <strong>weekly blogs</strong>", BodyType.HTML)
+            "Thank you for subscribing to our <strong>weekly blogs.</strong>", BodyType.HTML)
       )
     ).map { rsp: Response ->
         if (rsp.statusCode >= 400)
@@ -51,7 +51,7 @@ class MailController(private val emailSender: AsyncEmailSender<Request, Response
           .to(to)
           .subject("Sending e-mail from 2nd POST method using '${Thread.currentThread().name}' thread")
           .body("Hello <em>${to},</em><br>" +
-            "Thank you for subscribing to our <strong>weekly blogs</strong>", BodyType.HTML)
+            "Thank you for subscribing to our <strong>weekly blogs.</strong>", BodyType.HTML)
       )
     ).map{ rsp: Response ->
         if (rsp.statusCode >= 400)
