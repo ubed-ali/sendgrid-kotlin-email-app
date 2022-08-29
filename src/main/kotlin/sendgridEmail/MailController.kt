@@ -15,7 +15,6 @@ import org.slf4j.LoggerFactory
 import reactor.core.publisher.Mono
 import java.lang.Thread.sleep
 
-
 @Controller("/mail")
 class MailController(private val emailSender: AsyncEmailSender<Request, Response>) {
 
